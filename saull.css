@@ -1,0 +1,30 @@
+canvas {
+    border: 1px solid #000;
+    display: block;
+    margin: auto;
+    background-image: url('paisaje.avif');
+    background-size: cover;
+}
+
+body {
+margin: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background: linear-gradient(45deg, #00FF93, #FF0061 , #00F7FF , #FFF000  , #E000FF );
+background-size: 400% 400%;
+animation: gradientAnimation 10s ease infinite;
+}
+@keyframes gradientAnimation {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
